@@ -1,0 +1,1 @@
+ls *.html | while read -r file; do echo file | mv "$file" $(echo $file | sed 's|[^a-zA-Z0-9]||g' | sed 's|html|.html/g' | tr [A-Z] [a-z]); done
