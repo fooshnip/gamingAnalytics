@@ -1,0 +1,15 @@
+{
+    "contents" : "library(RPostgreSQL)\ndb <- dbConnect(PostgreSQL(), \n                user = \"postgres\", #This needs to be adjusted for your login details\n                host = \"localhost\",\n                dbname = \"gaming\", \n                password = \"postgres\") #This needs to be adjusted for your login details\n#Some example pulls\ndbListTables(db)\nmonsters <- dbGetQuery(db,\"Select * from monsters\")\nmonsters$bit <- ifelse(monsters$action==\"Kill\",1,0)\ndetach(\"package:RPostgreSQL\", unload=TRUE)\nlibrary(sqldf)\nsuccess <- sqldf(\"Select creature, sum(bit)/count(*) as successrate from monsters group by creature order by successrate asc\")\nclassrate <- sqldf(\"Select class, creature, sum(bit)/count(*) as successrate from monsters group by class, creature order by successrate asc\")",
+    "created" : 1364859777703.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3873713500",
+    "id" : "43BB4760",
+    "lastKnownWriteTime" : 1364863922,
+    "path" : "~/Documents/Northwestern/Projects/PLAIT Lab/TeraData/TeraRFiles/MonstersExploration.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

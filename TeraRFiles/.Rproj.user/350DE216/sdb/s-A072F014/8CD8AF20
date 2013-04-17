@@ -1,0 +1,21 @@
+{
+    "contents" : "",
+    "created" : 1365660182567.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8CD8AF20",
+    "lastKnownWriteTime" : 3762250842249388857,
+    "path" : null,
+    "properties" : {
+        "contentUrl" : "content?title=Data%3A+auctions1&file=3fd9c0053647467bad488a981131a7cf.htm",
+        "displayedObservations" : 100,
+        "displayedVariables" : 10,
+        "title" : "Data: auctions1",
+        "totalObservations" : 100,
+        "variables" : 10
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

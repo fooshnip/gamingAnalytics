@@ -1,0 +1,16 @@
+{
+    "contents" : "library(RPostgreSQL)\ndb <- dbConnect(PostgreSQL(), \n                user = \"postgres\", #This needs to be adjusted for your login details\n                host = \"localhost\",\n                dbname = \"gaming\", \n                password = \"postgres\") #This needs to be adjusted for your login details\n#Some example pulls\ndbListTables(db)\nstreetprices <- dbGetQuery(db,\"Select * from glitch.streetprices\")\nfriends <- dbGetQuery(db,\"Select * from glitch.friends\")\nauctions <- dbGetQuery(db,\"Select * from glitch.auctions\")\nsdbsales <- dbGetQuery(db,\"Select * from glitch.sdbsales\")\ndetach(\"package:RPostgreSQL\", unload=TRUE)\nlibrary(sqldf)\nauctions1 <- sqldf(\"select * from auctions limit 100\")",
+    "created" : 1365657223474.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3116907902",
+    "id" : "F20B2C48",
+    "lastKnownWriteTime" : 1365660022,
+    "path" : "~/Documents/Northwestern/Projects/PLAIT Lab/glitchDataset/mainScript.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
