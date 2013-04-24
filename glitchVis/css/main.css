@@ -203,6 +203,6 @@ body {
       .span3{
       	position: relative; bottom: 165px; top: 200px; right: 100px;
       }
-      .span5{
-      	position: absolute; bottom: 0;
+      .span8{
+      	position: relative; bottom: 0px right: 0px;
       }
