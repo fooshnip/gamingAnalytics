@@ -198,10 +198,10 @@ body {
       }
       .row { position: relative; }
       .span1{
-      	position: relative; bottom: 65px; top: 500px; left: 20px;
+      	position: relative; bottom: 65px; top: 600px; left: 20px;
       }
       .span3{
-      	position: relative; bottom: 165px; top: 200px; right: 100px;
+      	position: relative; bottom: 0px; top: 350px; right: 150px;
       }
       .span8{
       	position: relative; bottom: 0px right: 0px;
