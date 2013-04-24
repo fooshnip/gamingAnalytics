@@ -4,7 +4,7 @@ require 'sinatra/base'
 # The project root directory
 $root = ::File.dirname(__FILE__)
 
-BUILD_DIR = '.'
+BUILD_DIR = 'glitchVis'
 
 class SinatraStaticServer < Sinatra::Base
 
